@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" icons -->
+</head>
+
+<body>
+    <div class="w3-margin w3-display-middle w3-container w3-light-grey w3-card ">
+        <h2 class="w3-text-red w3-padding-16 w3-margin-top"><i
+                class="fa fa-phone fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>Contact Us</h2>
+        <form action="/contact" id="contactForm" method="POST" class="w3-text-red">
+
+            <!-- input fields -->
+            <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+                <div class="w3-rest">
+                    <input class="w3-input w3-border" ondblclick="this.value=''" name="name" id="name"  type="text"
+                        placeholder="Full Name" spellcheck="false" pattern="^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$" data-ms-editor="true" minlength="3" maxlength="50" required>
+                    <div class="ms-editor-squiggles-container" style="all: initial;"></div>
+                </div>
+            </div>
+            <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+                <div class="w3-rest">
+                    <input class="w3-input w3-border" ondblclick="this.value=''" name="email" id="email" type="email"
+                        placeholder="Email" spellcheck="false" data-ms-editor="true" maxlength="575" required>
+                    <div class="ms-editor-squiggles-container" style="all: initial;"></div>
+                </div>
+            </div>
+
+            <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+                <div class="w3-rest">
+                    <input class="w3-input w3-border" ondblclick="this.value=''" name="phone" id="phone"  type="tel" 
+                        placeholder="Phone" spellcheck="false" pattern="^\d{10}$" data-ms-editor="true" minlength="10" maxlength="10" required>
+                    <div class="ms-editor-squiggles-container" style="all: initial;"></div>
+                </div>
+            </div>
+
+            <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+                <div class="w3-rest">
+                    <input class="w3-input w3-border" ondblclick="this.value=''" name="message" id="message" type="text"
+                        placeholder="Message" spellcheck="false" data-ms-editor="true" maxlength="500" size="500">
+                    <div class="ms-editor-squiggles-container" style="all: initial;"></div>
+                </div>
+            </div>
+
+            <div class="w3-center h-captcha" data-sitekey="b4da1987-303c-4771-97c1-c576311369e1"></div>
+
+            <p class="w3-center">
+                <button onclick="" class="w3-button w3-section w3-red w3-ripple"> Send </button>
+            </p>
+            
+            
+
+            <!-- message pane -->
+            <div class="w3-panel w3-red w3-display-container" id="warning" style="visibility:hidden">
+                <span onclick="this.parentElement.style.display='none'"
+                class="w3-button w3-large w3-display-topright">&times;</span>
+                <p id="warn-msg"></p>
+              </div>
+              
+        </form>
+    </div>
+    <!--       
+        <h1> Contact Us </h1>
+            <div class="form-group row">                  
+            <input type="text" name="name" id="name" 
+            placeholder="Name"  required /><br>
+            
+            <input type="text" name="phone" id="phone"  
+            placeholder="Phone Number " required/><br>
+
+            <input type="email" name="email" id="email" 
+            placeholder="E-Mail " required /><br>
+                            <br>
+            <input type="submit" id="submitDetails"  
+            name="submitDetails" value="Submit" /><br>
+            </div>      
+     -->
+    </form>
+</body>
+<script src="https://hcaptcha.com/1/api.js" async defer></script>
+</html>
