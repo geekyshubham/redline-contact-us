@@ -15,7 +15,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ### Deployment
 
 Deployed on heroku : 
-frontend : [https://redline-contactus.herokuapp.com/]
-nodeJs api endpoint : [redline-contact-us.herokuapp.com/contact]
+frontend : [https://redline-contactus.herokuapp.com/]<br>
+nodeJs api endpoint : [https://redline-contact-us.herokuapp.com/contact]
 
 
